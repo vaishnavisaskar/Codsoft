@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Include custom CSS -->
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color:  #006680 ;
+        }
+        .image-container{
+            text-align: center;
+            padding: 20px;
+        }
+        .img{
+            max-width: 100;
+            height:auto;
+            border: 2px solid #ccc;
+            box-shadow:0 0 5px rgba(0, 0, 0, 0);
+            border-radius:10px;
+        }
+        .car-item {
+            border: 1px solid #e9ecef;
+            margin-bottom: 20px;
+        }
+        .maincontainer{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+    </head>
+        <body>
+    <background style="color:white">
+
+    <!-- Navbar -->
+    <span class="navbar" style="background-color:#404040">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <div class="container"  >
+    <a class="navbar-brand" style="color:black"><u>Car Express</u></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#About"><u>About</u></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Brands"><u>Brands</u></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact"><u>Contact</u></a>
+            </li>
+            <li>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+            </li> 
+            </ul>
+    </div>
+    </div>
+    </nav>
+    </span>
+
+    <!-- Imagebox Section -->
+    <div class="imagebox imagebox-fluid">
+    <div class="image-container">
+        <img src="C:\Users\hp\Desktop\internship\cars\tcar1.png" class="img-fluid" alt="tcar1"><br><br>
+        <a class="btn btn-dark btn-lg" href="#Brands">Brands</a>
+    </div>
+    </div>
+
+    <!-- Brands Section -->
+    <section id="inventory" class="py-5">
+    <div class="maincontainer">
+    <div class="container1">
+        <h2 class="text-center" style="color:white"> Brands</h2>
+        <div class="row">
+        <div class="col-md-4">
+            <div class="car-item">
+                <img src="C:\Users\hp\Desktop\internship\cars\alogo.png" class="img-fluid" alt="alogo" length="200" width="500">
+                <div class="text-center">
+                    <h3>AUDI</h3>
+                </div>
+                    <p style="color:white">Audi is a German automobile manufacturer known for producing luxury vehicles, including premium cars and SUVs, renowned for their performance, technology, and craftsmanship.</p>
+                </div>
+            </div>
+        <div class="col-md-4">
+            <div class="car-item">
+                <img src="C:\Users\hp\Desktop\internship\cars\Hlogo.png" class="img-fluid" alt="Hlogo" style="height:300px" width="500" >
+                <div class="text-center">
+                    <h3>HUNDAI</h3>
+                </div>
+                    <p style="color:white">Hyundai is a South Korean automotive company recognized for producing a wide range of vehicles known for their affordability and quality.</p>
+                </div>
+            </div>
+        <div class="col-md-4">
+            <div class="car-item">
+                <img src="C:\Users\hp\Desktop\internship\cars\tata.png" class="img-fluid" alt="tata">
+                <div class="text-center">
+                    <h3>TATA</h3>
+                </div>
+                    <p style="color:white">Tata Group is an Indian multinational conglomerate with diverse business interests, encompassing sectors such as automotive, steel, information technology, and more.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+<!-- Services Section -->
+<section id="services" class= "bg-light bg-dark">
+    <div class="container2">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h3>Car Maintenance</h3>
+                    <p>Our system helps optimize vehicle performance and reduce operational costs through automated tracking and scheduling of maintenance tasks.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h3>Fleet Tracking</h3>
+                    <p>Our system enables real-time monitoring and management of multiple cars, enhancing efficiency, safety, and logistics.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h3>Reporting & Analytics</h3>
+                    <p>Our management system provides comprehensive insights into car performance, maintenance, and usage, empowering efficient fleet management and data-driven decision-making.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Type a message" rows="5"></textarea>
+                    </div>
+                    <div class="container text-center">
+                        <button class="btn btn-dark">Submit</button>
+                      </div>
+                      
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JS section  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
